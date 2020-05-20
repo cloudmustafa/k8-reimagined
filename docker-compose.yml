@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  cqrsmediatr:
+    image: ${DOCKER_REGISTRY-}cqrsmediatr
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+  simpleapi:
+    image: ${DOCKER_REGISTRY-}simpleapi
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+

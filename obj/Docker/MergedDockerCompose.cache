@@ -1,0 +1,30 @@
+services:
+  cqrsmediatr:
+    build:
+      context: /Users/cloudmustafa/Projects/K8/k83.1
+      dockerfile: ./Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: cqrsmediatr
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/cloudmustafa/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/cloudmustafa/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+  simpleapi:
+    build:
+      context: /Users/cloudmustafa/Projects/K8/k83.1
+      dockerfile: ./Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: simpleapi
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/cloudmustafa/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/cloudmustafa/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

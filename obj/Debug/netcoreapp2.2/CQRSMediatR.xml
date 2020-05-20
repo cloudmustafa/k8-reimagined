@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CQRSMediatR</name>
+    </assembly>
+    <members>
+        <member name="M:CQRSMediatR.Controllers.UsersController.ListAsync">
+            <summary>
+            Lists all users from the API. 
+            </summary>
+            <returns>List of users.</returns>
+        </member>
+        <member name="M:CQRSMediatR.Controllers.UsersController.GetAsync(System.Int32)">
+            <summary>
+            Lists a given user by their ID.
+            </summary>
+            <param name="id">User ID.</param>
+            <returns>User.</returns>
+        </member>
+        <member name="M:CQRSMediatR.Controllers.UsersController.PostAsync(CQRSMediatR.Controllers.Resources.UserResource)">
+            <summary>
+            Creates a new user in the API.
+            </summary>
+            <param name="resource">Updated user data.</param>
+            <returns>Response for the request.</returns>
+            <response code="201">Returns the newly created user data.</response>
+            <response code="400">Return data containing information about why has the request failed.</response>
+        </member>
+        <member name="M:CQRSMediatR.Controllers.UsersController.UpdateAsync(System.Int32,CQRSMediatR.Controllers.Resources.UserResource)">
+            <summary>
+            Updates a given user by their identifier.
+            </summary>
+            <param name="id">User ID.</param>
+            <param name="resource">Updated user data.</param>
+            <returns>Response for the request.</returns>
+            <response code="200">Returns the response data container the updated user information.</response>
+            <response code="400">Return data containing information about why has the request failed.</response>
+        </member>
+        <member name="M:CQRSMediatR.Controllers.UsersController.DeleteAsync(System.Int32)">
+            <summary>
+            Deletes a given user by their identifier.
+            </summary>
+            <param name="id">User ID.</param>
+            <returns>Response for the request</returns>
+            <response code="200">Returns the response data container the deleted user information.</response>
+            <response code="400">Return data containing information about why has the request failed.</response>
+        </member>
+        <member name="M:CQRSMediatR.Domain.Communication.Response`1.#ctor(System.String)">
+            <summary>
+            Produces a failure response.
+            </summary>
+            <param name="message">Error message.</param>
+        </member>
+        <member name="M:CQRSMediatR.Domain.Communication.Response`1.#ctor(`0)">
+            <summary>
+            Producess a successful response.
+            </summary>
+            <param name="data">Returned data.</param>
+        </member>
+    </members>
+</doc>
