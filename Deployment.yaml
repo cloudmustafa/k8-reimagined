@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: simpleapi
-        image: sogetislbdemo.azurecr.io/simpleapi:v1 # #{ImageTag}# #v10 #v2.#{Build.BuildId}#
+        image: gcr.io/act-gke/simpleapi:v3 # #{ImageTag}# #v10 #v2.#{Build.BuildId}#
         ports:
         - containerPort: 6002
         resources:

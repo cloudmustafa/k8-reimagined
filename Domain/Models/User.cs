@@ -5,14 +5,20 @@ namespace SimpleApi.Domain.Models
     public class User
     {
         [Key]
-        public int Id { get; set; }
+        public int id { get; set; }
 
         [Required]
         [MaxLength(100)]
-        public string Name { get; set; }
+        public string title { get; set; }
 
         [Required]
-        [Range(0, 120)]
-        public byte Age { get; set; }
+        public int state { get; set; }
+
+
+        [Required]
+        public int severity { get; set; }
+
+        [Required]
+        public int reportedby { get; set; }
     }
 }
