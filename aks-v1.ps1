@@ -67,7 +67,7 @@ Write-Output "------------------------------------------------------------------
 echo "`n"
 
 echo "Create an ACR image pull secret key which will authorize AKS to pull images from ACR using the Service Principal created earlier"
-echo "Run command: kubectl create secret docker-registry acr-auth --docker-server sogetislbdemo.azurecr.io --docker-username ServicePrincipalID --docker-password ServicePrincipalPassword --docker-email joydeep.ghosh@us.sogeti.com"
+echo "Run command: kubectl create secret docker-registry acr-auth --docker-server sogetislbdemo.azurecr.io --docker-username ServicePrincipalID --docker-password ServicePrincipalPassword --docker-email akhterul.mustafa@us.sogeti.com"
 echo "`n"
 echo "OUTPUT"
 kubectl create secret docker-registry acr-auth --docker-server sogetislbdemo.azurecr.io --docker-username $ServicePrincipalID --docker-password $ServicePrincipalPassword --docker-email akhterul.mustafa@us.sogeti.com

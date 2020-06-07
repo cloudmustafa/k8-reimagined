@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{87A11CE1-6879-49C7-802C-3B46DF2D78BC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Commands/Users/CreateUserCommand.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="aks-v1.ps1">
     <Files>
-      <File FileName="Domain/Models/User.cs" Line="10" Column="19" />
-      <File FileName="Domain/Commands/Users/CreateUserCommandHandler.cs" Line="19" Column="1" />
-      <File FileName="Domain/Commands/Users/CreateUserCommand.cs" Line="11" Column="45" />
+      <File FileName="Domain/Commands/Users/CreateUserCommandHandler.cs" Line="1" Column="1" />
+      <File FileName="Domain/Commands/Users/CreateUserCommand.cs" />
+      <File FileName="Controllers/UsersController.cs" />
+      <File FileName="Domain/Models/User.cs" Line="1" Column="1" />
+      <File FileName="aks-v1.ps1" Line="17" Column="100" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,9 +18,7 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True">
                 <Node name="Commands" expanded="True">
-                  <Node name="Users" expanded="True">
-                    <Node name="CreateUserCommand.cs" selected="True" />
-                  </Node>
+                  <Node name="Users" expanded="True" />
                 </Node>
                 <Node name="Communication" expanded="True" />
                 <Node name="Models" expanded="True" />
@@ -27,6 +27,7 @@
                 </Node>
                 <Node name="Repositories" expanded="True" />
               </Node>
+              <Node name="aks-v1.ps1" selected="True" />
             </Node>
           </Node>
         </State>
