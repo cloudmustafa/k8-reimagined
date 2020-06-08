@@ -108,7 +108,7 @@ echo "`n"
 
 
 echo "Browse the dashboard of AKS cluster"
-echo "Run command: az aks browse --resource-group slbrg --name mynewcluster"
+echo "Run command: az aks browse --resource-group slbrg --name mynewcluster
 echo "`n"
 echo "OUTPUT"
 az aks browse --resource-group slbrg --name mynewcluster
