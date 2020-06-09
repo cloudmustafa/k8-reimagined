@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{87A11CE1-6879-49C7-802C-3B46DF2D78BC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="aks-v1.ps1">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Domain/Repositories/UserRepository.cs">
     <Files>
-      <File FileName="Domain/Commands/Users/CreateUserCommandHandler.cs" Line="1" Column="1" />
-      <File FileName="Domain/Commands/Users/CreateUserCommand.cs" />
-      <File FileName="Controllers/UsersController.cs" />
-      <File FileName="Domain/Models/User.cs" Line="1" Column="1" />
-      <File FileName="aks-v1.ps1" Line="17" Column="100" />
+      <File FileName="Controllers/UsersController.cs" Line="1" Column="1" />
+      <File FileName="Domain/Repositories/UserRepository.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,9 +22,10 @@
                 <Node name="Queries" expanded="True">
                   <Node name="Users" expanded="True" />
                 </Node>
-                <Node name="Repositories" expanded="True" />
+                <Node name="Repositories" expanded="True">
+                  <Node name="UserRepository.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="aks-v1.ps1" selected="True" />
             </Node>
           </Node>
         </State>
